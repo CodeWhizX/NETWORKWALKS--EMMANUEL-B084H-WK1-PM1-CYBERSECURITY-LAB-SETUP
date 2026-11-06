@@ -89,5 +89,4 @@ DOS
 netsh advfirewall firewall add rule name="Allow ICMPv4-In" protocol=icmpv4:8,any dir=in action=allow
 
 NAT vs. NAT Network: A standard NAT adapter puts each VM on its own isolated routing instance, preventing VM-to-VM traffic. NAT Network pools all participating virtual machines onto the same virtual switch while providing outbound WAN access.
-
 NetworkManager DAD Timeout: Setting ipv4.dad-timeout 0 avoids infinite DHCP negotiation stalls on virtual network adapters in Debian/Kali environments.
